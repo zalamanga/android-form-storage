@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">aplikasiform</string>
+
+    <string-array name="kelas">
+        <item>--item--</item>
+        <item>3SE1</item>
+        <item>3SE2</item>
+        <item>3SE3</item>
+        <item>3SE4</item>
+        <item>3SE5</item>
+    </string-array>
+</resources>

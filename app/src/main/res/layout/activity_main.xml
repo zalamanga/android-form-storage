@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Hello, "/>
+            <TextView
+                android:id="@+id/tv_namaMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                tools:text="Nama"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gambar"
+                />
+            <Button
+                android:id="@+id/btopenregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="openRegister"
+                android:text="Form Siswa"
+                />
+            <Button
+                android:id="@+id/btshowRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Register Internal"
+                android:onClick="showRegister"
+                />
+            <Button
+                android:id="@+id/btshowRegister2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Register External"
+                android:onClick="showRegister2"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/bt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:text="Log Out"
+            android:textColor="#FFFFFF"
+            android:background="#FF0000"
+            android:onClick="logout"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
